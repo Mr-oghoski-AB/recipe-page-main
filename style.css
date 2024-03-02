@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+#parent-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+ 
+}
+
+.omlete{
+    width: 100%;
+
+}
+.omlete img {
+    width: 100%;
+}
+p,li{
+    font-size: 16px;
+    font-weight: 400;
+}
+p{
+    margin: 20px;
+}
+
+h1,h2 {
+    font-family: "Young Serif", serif;
+    margin: 20px;
+}
+h2{
+    color:  hsl(14, 45%, 36%);
+
+}
+h3{
+    color:hsl(332, 51%, 32%);
+}
+#prep-text {
+    background-color:hsl(330, 100%, 98%) ;
+    padding: 20px;
+    border-radius: 20px; margin: 20px;
+}
+
+
+/* @media screen and (min-width: 768px) { 
+    
+}*/
