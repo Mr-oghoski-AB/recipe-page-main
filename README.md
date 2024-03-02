@@ -23,8 +23,8 @@ This is my solution to the frontend mentor challenge which was given to me as a 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/frontend-menter-recipe-page-bYZGRT2xnw)
+- Live Site URL: [Add live site URL here](https://mr-oghoski-ab.github.io/recipe-page-main/)
 
 ## My process
   I first created the structure of the page with html with the appropriate html tags and elements 
