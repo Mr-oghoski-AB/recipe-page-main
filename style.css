@@ -21,14 +21,15 @@ body{
 .omlete img {
     width: 100%;
 }
-p,li{
+p{
     font-size: 16px;
     font-weight: 400;
-}
-p{
     margin: 20px;
 }
 
+h1 {
+    font-weight: 700;
+}
 h1,h2 {
     font-family: "Young Serif", serif;
     margin: 20px;
@@ -46,7 +47,51 @@ h3{
     border-radius: 20px; margin: 20px;
 }
 
+ul,ol {
+    list-style: none;
+    line-height: 25px;
+}
+#prep-text li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: hsl(332, 51%, 32%); /* Change the bullet color */
+    display: inline-block;
+    width: 1em; /* Adjust the width for spacing */
+    margin-left: -1em; /* Adjust margin for spacing */
+}
 
-/* @media screen and (min-width: 768px) { 
-    
-}*/
+ul li::before {
+    content: '\2022'; 
+    color: hsl(14, 45%, 36%); 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+ol li::before {
+    content: counter(item); 
+    counter-increment: item; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+table{
+    margin: 10px 90px;
+  
+}
+td{
+    width: 20%;
+    text-align: left;
+
+}
+.right {
+    color: hsl(14, 45%, 36%);
+}
+
+
+/* @media screen and (min-width: 1000px) {  
+    body{
+        hsl(24, 5%, 18%)
+    }
+} */
