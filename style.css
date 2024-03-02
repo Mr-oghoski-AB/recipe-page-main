@@ -11,6 +11,7 @@ body{
     margin: 0;
     font-family: "Outfit", sans-serif;
     width: 100%;
+    background-color: hsl(0, 0%, 100%);
  
 }
 
@@ -24,7 +25,8 @@ body{
 p{
     font-size: 16px;
     font-weight: 400;
-    margin: 20px;
+    margin: -5px 20px 20px;
+    color: hsl(24, 5%, 18%);
 }
 
 h1 {
@@ -44,19 +46,22 @@ h3{
 #prep-text {
     background-color:hsl(330, 100%, 98%) ;
     padding: 20px;
-    border-radius: 20px; margin: 20px;
+    border-radius: 20px; 
+    margin: 20px;
 }
 
 ul,ol {
     list-style: none;
     line-height: 25px;
+    color: hsl(24, 5%, 18%);
+    margin-top: -5px;
 }
 #prep-text li::before {
     content: '\2022'; /* Unicode character for a bullet point */
     color: hsl(332, 51%, 32%); /* Change the bullet color */
     display: inline-block;
     width: 1em; /* Adjust the width for spacing */
-    margin-left: -1em; /* Adjust margin for spacing */
+    margin-left: -2em; /* Adjust margin for spacing */
 }
 
 ul li::before {
@@ -66,15 +71,63 @@ ul li::before {
     width: 1em; 
     margin-left: -1em; 
 }
+li{
+    margin-bottom: 1em;
+}
 
-ol li::before {
-    content: counter(item); 
-    counter-increment: item; 
+ol .one::before {
+    content: counter(num); 
+    counter-increment: num +1; 
     color: hsl(14, 45%, 36%);
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
+
+ol .one::before {
+    content:'1.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ol .two::before {
+    content: '2.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ol .three::before {
+    content: '3.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ol .four::before {
+    content: '4.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol .five::before {
+    content: '5.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ol .six::before {
+    content: '6.'; 
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 
 table{
     margin: 10px 90px;
@@ -83,6 +136,7 @@ table{
 td{
     width: 20%;
     text-align: left;
+    color: hsl(24, 5%, 18%);
 
 }
 .right {
@@ -90,8 +144,24 @@ td{
 }
 
 
-/* @media screen and (min-width: 1000px) {  
+@media screen and (min-width: 1000px) { 
     body{
-        hsl(24, 5%, 18%)
+       background-color:  hsl(30, 54%, 90%);
     }
-} */
+    #parent-container{
+        width: 45%;
+        margin: 30px 0;
+        padding: 50px;
+        border-radius: 20px;
+    }
+    .omlete{
+        border-radius: 20px;
+    
+    }
+    .omlete img {
+        border-radius: 20px;
+    }
+    h1,h2,p,#prep-text {
+        margin-left: 0;
+    }
+}
